@@ -1,12 +1,12 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../.';
+import DsButton from '../src/components/DsButton';
 
 const App = () => {
   return (
     <div>
-      <Thing />
+      <DsButton>Olá mundo</DsButton>
     </div>
   );
 };
