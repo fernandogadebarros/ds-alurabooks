@@ -3,15 +3,16 @@ import { DsButtonProps } from '.';
 
 export const DsButton = styled.button<DsButtonProps>`
   padding: 16px 32px;
-  color: ${({ variant }) => (variant === 'primary' ? '#fff' : '#eb9b00')};
+  color: ${({ variant }: { variant: 'primary' | 'secondary' }) =>
+    variant === 'primary' ? '#fff' : '#eb9b00'};
   font-size: 20px;
   cursor: pointer;
-  background-color: ${({ variant }) =>
+  background-color: ${({ variant }: { variant: 'primary' | 'secondary' }) =>
     variant !== 'primary' ? '#fff' : '#eb9b00'};
   border: 2px solid #eb9b00;
   transition: all 0.3s;
 
-  ${({ variant }) =>
+  ${({ variant }: { variant: 'primary' | 'secondary' }) =>
     variant === 'primary'
       ? css`
           &:hover {
