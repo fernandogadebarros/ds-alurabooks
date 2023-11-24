@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components';
+import { DsButtonProps } from '.';
 
-export const DsButton = styled.button<{
-  variant?: 'primary' | 'secondary';
-}>`
+export const DsButton = styled.button<DsButtonProps>`
   padding: 16px 32px;
   color: ${({ variant }) => (variant === 'primary' ? '#fff' : '#eb9b00')};
   font-size: 20px;
