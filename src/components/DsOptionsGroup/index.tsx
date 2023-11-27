@@ -31,8 +31,6 @@ export default function DsOptionsGroups({
     }
   };
 
-  console.log(selectOption);
-
   return (
     <>
       {options.map(option => (
